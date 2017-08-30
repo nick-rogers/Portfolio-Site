@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
+
+/* Below is general CSS, for desktop format */
+
+/*Home Page CSS*/
+
+body {
+	margin: 0px;
+	width: 100%;
+	background-color: white;
+	background-attachment: fixed;
+	backface-visibility: 0.5;
+}
+
+.content {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 7000px;
+	margin-top: 150px;
+	background-size: 100% 1200px;
+	opacity: 0;
+	overflow: hidden;
+}
+/* margin top 120px after animation */
+
+.name-header-container {
+	width: 100%;
+	height: 475px;
+	display: block;
+	float: left;
+}
+
+.my-name {
+	display: block;
+	font-size: 50px;
+	margin-top: 150px;
+	color: #151a3c;
+	font-family: "Roboto", sans-serif;
+	font-weight:300;
+	text-align: center;
+	/*text-shadow: 3px 3px rgba(50,50,50,0.1);*/
+}
+
+.project {
+	width: 100%;
+	height: 350px;
+	display: block;
+	margin-top: 500px;
+	text-align: center;
+	margin-bottom: -500px;
+}
+
+.proj-container {
+	width: 800px;
+	height: 350px;
+	display: inline-block;
+	background-image: url(newtitles.png);
+	background-size: 100% 100%;
+}
+
+.center-link {
+width: 100%;
+height: 100%;
+display: block;
+float: left;
+opacity: 1;
+}
+
+.center-link:hover {
+opacity: 0.1;
+transition: 0.4s;
+}
+
+.left-link {
+width: 50%;
+height: 100%;
+display: block;
+float: left;
+opacity: 1;
+}
+
+.left-link:hover {
+opacity: 0.1;
+transition: 0.4s;
+}
+
+
+
+.right-link {
+width: 50%;
+height: 100%;
+display: block;
+background-color: blue;
+float: right;
+opacity: 1;
+}
+
+.right-link:hover {
+opacity: 0.1;
+transition: 0.4s;
+}
+
+
+
+.split-link {
+	width: 50%;
+	height: 100%;
+	display: block;
+	background-color: red;
+	float: left;
+}
+
+.top {
+width: 100%;
+height: 50%;
+display: block;
+background-color: purple;
+float: left;
+}
+
+.bottom {
+	width: 100%;
+	height: 50%;
+	display: block;
+	background-color: red;
+	float: left;
+}
+
+
+/* Nav Bar CSS*/
+
+.navigation {
+	display: block;
+	position: fixed;
+	float: left;
+	width: 100%;
+	height: 120px;
+	z-index: 100;
+}
+
+.n-d-homelink {
+	display: block;
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin-top: 36px;
+	margin-left: 50px;
+	background-size: 103.5% 102.5%;
+	background-repeat: no-repeat;
+	background-color: #151a3c;
+	background-position: right;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #151a3c;
+	z-index: 30;
+}
+
+.n-d-categories {
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-top: 36px;
+	margin-right: 50px;
+	background-color: #151a3c;
+	background-image: url(menu_background.png);
+	background-size: 25px 20px;
+	background-repeat: no-repeat;
+	background-position:center;
+	border-radius: 0px;
+	z-index: 30;
+}
+
+.n-d-categories:hover {
+	width: 100px;
+	height: 100px;
+	transition: 0.3s;
+}
+
+.section {
+display: inline-block;
+color: white;
+font-family: "Roboto", sans-serif;
+font-size: 10px;
+width: 120px;
+height: 30px;
+float: left;
+line-height: 30px;
+cursor: pointer;
+text-decoration: none;
+margin-left: 15px;
+}
+
+.section:hover {
+	opacity: 0.7;
+}
+
+/* CSS for the project pages */
+
+.project-intro {
+	width: 100%;
+	height: 270px;
+	display: block;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.project-head-container {
+	width: 750px;
+	height: 100%;
+	display: inline-block;
+}
+
+.image-wide {
+	width: 100%;
+	height: 300px;
+	display: block;
+	background-color: purple;
+	margin-top: 120px;
+}
+
+.project-name {
+	width: 50%;
+	display: block;
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 50px;
+	color: #151a3c;
+	font-weight:300;
+	margin-top: 30px;
+}
+
+.project-sub {
+	width: 30%;
+	display: block;
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	color: #151a3c;
+	font-weight:300;
+	margin-top: -60px;
+	margin-left: 20px;
+}
+
+.sub-line {
+	width: 3px;
+	height: 18px;
+	display: block;
+	background-color: #151a3c;
+	position: absolute;
+	margin-top: -57px;
+	margin-left: 4px;
+}
+
+.project-head-text {
+	width: 300px;
+	height: 80px;
+	display: block;
+	float: left;
+	position: absolute;
+	text-align: left;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: #151a3c;
+	font-weight:300;
+}
+
+.lead-image {
+	width: 300px;
+	height: 80%;
+	display: block;
+	float: right;
+	background-color: blue;
+	margin-top: -120px;
+}
+
+.other-projects {
+	width: 32px;
+	height: 550px;
+	margin-top: 150px;
+	margin-right: -31px;
+	float: right;
+	text-align: center;
+	display: none;
+}
+
+.other-projects-on {
+	width: 32px;
+	height: 550px;
+	margin-top: 150px;
+	margin-right: -31px;
+	float: right;
+	text-align: center;
+	display: block;
+}
+
+.other-projects-centered {
+	width: 32px;
+	height: 500px;
+	display: inline-block;
+}
+
+.other {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin-top: 26px;
+	background-color: grey;
+}
+
+/* The Challenge Styles */
+
+.p-component {
+	width: 100%;
+	height: 900px;
+	margin-bottom: 100px;
+}
+
+.c-header {
+	width: 100%;
+	height: 70px;
+	font-size: 40px;
+	color: #151a3c;
+	font-family: "Roboto", sans-serif;
+	font-weight:300;
+	text-align: center;
+	margin-top: 150px;
+	position: absolute;
+}
+
+.c-text-container {
+	width: 100%;
+	height: 125px;
+	position: absolute;
+	margin-top: 220px;
+	text-align: center;
+}
+
+.c-text {
+	width: 400px;
+	height: 12px;
+	display: inline-block;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: #151a3c;
+	font-weight: 300;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.c-image-container {
+	width: 100%;
+	height: 216px;
+	position: absolute;
+	margin-top: 375px;
+	text-align: center;
+}
+
+.default-gallery-container {
+	width: 600px;
+	height: 432px;
+	display: inline-block;
+}
+
+.carousel-gallery-container {
+	width: 864px;
+	height: 432px;
+	display: inline-block;
+}
+
+.default-gallery-image {
+	width: 300px;
+	height: 216px;
+	background-color: red;
+	display: block;
+	float: left;
+}
+
+.default-gallery-wide {
+	width: 600px;
+	height: 216px;
+	background-color: blue;
+	display: block;
+	float: left;
+}
+
+.default-gallery-square {
+	width: 216px;
+	height: 216px;
+	background-color: black;
+	display: block;
+	float: left;
+}
+
+.final-images {
+	width: 100%;
+	height: 600px;
+	background-color: red;
+	display: block;
+	position: absolute;
+}
+
+.bio-text {
+width: 400px;
+height: 400px;
+display: block;
+margin-left: 22%;
+margin-top: 125px;
+float: left;
+}
+
+.b-text {
+	width: 300px;
+	height: 200px;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: #151a3c;
+	font-weight: 300;
+	text-align: left;
+	display: block;
+	background-color: white;
+	margin-left: 40px;
+	margin-top: 100px;
+	line-height: 20px;
+}
+
+.bio-image {
+width: 400px;
+height: 400px;
+display: block;
+margin-top: 125px;
+float: left;
+}
+
+.resume {
+	width: 612px;
+	height: 792px;
+	margin-top: 50px;
+	display: inline-block;
+}
